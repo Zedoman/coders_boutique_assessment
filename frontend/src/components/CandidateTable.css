@@ -1,0 +1,37 @@
+.candidate-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .candidate-table th,
+  .candidate-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .candidate-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .candidate-table select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .candidate-table th,
+    .candidate-table td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .candidate-table {
+      font-size: 14px;
+    }
+  }
+  
