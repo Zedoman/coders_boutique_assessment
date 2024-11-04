@@ -20,8 +20,9 @@ This project is a web application for tracking candidate assessments. It feature
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
-    cd <repository-name>/backend
+    git clone https://github.com/Zedoman/coders_boutique_assessment
+    cd coders_boutique_assessment/backend
+    cd coders_boutique_assessment/frontend
     ```
 
 2. Install dependencies:
