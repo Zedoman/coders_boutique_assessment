@@ -2,6 +2,12 @@
 
 This project is a web application for tracking candidate assessments. It features a user-friendly dashboard to add, update, and view candidates' assessment statuses, with sorting and filtering capabilities.
 
+# Test user Login
+{
+  "username": "testuser",
+  "password": "password123"
+}
+
 ## Table of Contents
 - [Setup](#setup)
 - [Functionality](#functionality)
