@@ -11,7 +11,7 @@ function AddCandidateModal({ isOpen, onClose, onCandidateAdded }) {
     const newCandidate = { name, status };
   
     try {
-      const response = await fetch(`${API_URL}//api/candidates`, {
+      const response = await fetch(`${API_URL}/api/candidates`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
