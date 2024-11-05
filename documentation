@@ -1,0 +1,17 @@
+Documentation
+
+Design Approach
+The design approach for the Assessment Tracking Dashboard focuses on creating a robust, efficient, and user-friendly web application that can manage candidate assessments seamlessly. The project is divided into a clear frontend and backend architecture, ensuring a separation of concerns that makes the application both maintainable and scalable.
+
+Frontend Architecture: We chose React.js for the frontend to benefit from its component-based design and efficient state management, which simplifies the implementation of features like sorting, filtering, and modal interactions. For a cohesive and modern user interface, we integrated ShadCN to utilize reusable UI components such as tables, buttons, and modals. We prioritized a responsive design to make the dashboard functional on both desktop and mobile devices. Additionally, the authentication flow was carefully designed, starting with a login page that ensures only authorized users can access the dashboard.
+
+Backend Architecture: The backend is built using Node.js with Express.js, structured as a RESTful API. We implemented JWT-based authentication for secure user login and session management. The backend communicates with a PostgreSQL database hosted on Vercel Postgres, chosen for its reliability and ease of use in a cloud-based environment. The database design includes separate tables for candidates and users to efficiently manage data. Endpoints for CRUD operations ensure that candidate data can be fetched, added, updated, or modified as needed.
+
+Challenges Faced
+Authentication Implementation: One of the main challenges was setting up a secure and efficient authentication flow using JWT. Ensuring token verification and error handling in case of unauthorized access required careful consideration.
+
+Data Handling and Validation: Validating user inputs, especially when adding or updating candidate data, was critical to prevent invalid data from being stored. Implementing robust error handling for both frontend and backend scenarios was necessary.
+
+Database Integration: Integrating the Vercel Postgres database required setting up proper environment configurations and making sure that all database queries were optimized for performance. Managing real-time updates for the frontend also presented challenges in terms of consistency and synchronization.
+
+Overall, the architectural decisions were made to balance performance, maintainability, and a seamless user experience.

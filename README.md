@@ -109,5 +109,4 @@ This project is a web application for tracking candidate assessments. It feature
   │   ├── /components
   │   ├── App.js
   │   ├── index.js
-  │   └── /styles
   └── README.md
