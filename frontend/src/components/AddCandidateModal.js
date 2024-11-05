@@ -4,13 +4,14 @@ import './AddCandidateModal.css';
 function AddCandidateModal({ isOpen, onClose, onCandidateAdded }) {
   const [name, setName] = useState('');
   const [status, setStatus] = useState('');
+  const API_URL = 'https://coders-boutique-assessment.onrender.com';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newCandidate = { name, status };
   
     try {
-      const response = await fetch('http://localhost:5000/api/candidates', {
+      const response = await fetch(`${API_URL}//api/candidates`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

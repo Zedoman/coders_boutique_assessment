@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://coders-boutique-assessment.onrender.com';
 
 export const fetchCandidates = async () => {
   const response = await fetch(`${API_URL}/candidates`);

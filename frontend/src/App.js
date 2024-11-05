@@ -9,6 +9,7 @@ function App() {
   const [candidates, setCandidates] = useState([]);
   const [isModalOpen, setModalOpen] = useState(false);
   const [sortOption, setSortOption] = useState('name');
+  const API_URL = 'https://coders-boutique-assessment.onrender.com';
 
   useEffect(() => {
     if (isLoggedIn) {
@@ -18,7 +19,7 @@ function App() {
 
   const fetchCandidates = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/candidates');
+      const response = await fetch(`${API_URL}/api/candidates`);
       const data = await response.json();
       if (Array.isArray(data)) {
         setCandidates(data);
@@ -40,7 +41,7 @@ function App() {
   const handleStatusUpdate = async (id, newStatus) => {
     try {
       // Make a PUT request to update the status of the candidate
-      const response = await fetch(`http://localhost:5000/api/candidates/${id}/status`, {
+      const response = await fetch(`${API_URL}/api/candidates/${id}/status`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
